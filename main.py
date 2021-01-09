@@ -22,11 +22,12 @@ Otherwise, the message will just be their score. e.g.:
 
 name01=name1.lower();
 name02=name2.lower();
-sum1=name01.count("t")+name01.count("r")+name01.count("u")+name01.count("e")
-sum2=name02.count("l")+name02.count("o")+name02.count("v")+name02.count("e");
+names=name1+name2;
+sum1=names.count("t")+names.count("r")+names.count("u")+names.count("e")
+sum2=names.count("l")+names.count("o")+names.count("v")+names.count("e");
 score=int(str(sum1)+str(sum2))
 #print(score)
-if score<10 and score>90:
+if score<10 or score>90:
   print(f"Your score is {score}, you go together like coke and mentos.")
 elif score>40 and score<50:
   print(f"Your score is {score}, you are alright together.")
